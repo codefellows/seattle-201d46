@@ -6,6 +6,8 @@
 // Similar to arrays except instead of storing data at an index (0, 1, 2, 3)
 // We store the data at a key ('name', 'height', 'goes_bowling_sometimes')
 
+//Some Built in objects : Array, String, Object, Window, Document, console, etc
+
 // name:nicholas === key:value pair
 // name:nicholas === property
 // teach_class === method// a function inside an object is a method, it is also a key value pair, and also a property, but we call it method for clarity
@@ -15,7 +17,7 @@ var nicholas = {
   height: '6\'2.5',
   name: 'nicholas',
   teaches: true,
-  teach_class: function(){
+  teach_class: function () {
     console.log('This is my favorite lesson!');
   }
 };
@@ -47,7 +49,7 @@ nicholas.height === '6\'2.5';
 // ========================================================
 
 var empty_object = {};
-var one_line_object = {'a' : 1, b : 99, c : [1,2,3]};
+var one_line_object = { 'a': 1, b: 99, c: [1, 2, 3] };
 
 //the indeces of an array are also strings
 // all keys in objects are strings
@@ -55,7 +57,7 @@ var one_line_object = {'a' : 1, b : 99, c : [1,2,3]};
 var generic_object = {
   key1: 'value1',
   // <'key2' : 2,> the entire key value pair in the <> is a property
-  'method1': function(){
+  'method1': function () {
     console.log('some thing');
     return 5;
   },
@@ -90,7 +92,7 @@ console.log(morgana);
 // contextual this points back at the object a method is called from;
 // in says_their_own_name, contextual this points at the 'nicholas' object
 
-nicholas.says_their_own_name = function(){
+nicholas.says_their_own_name = function () {
   console.log('my name is ' + this.name);
   console.log('my height is ' + nicholas.height);
 };
