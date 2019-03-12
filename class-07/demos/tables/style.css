@@ -1,0 +1,20 @@
+table {
+  border: black solid 1px;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: black solid 1px;
+}
+
+tbody tr:nth-child(2n + 1){
+  background: #00FFFF80;
+}
+
+tbody tr:nth-child(2n){
+  background: #00FFFF20;
+}
+
+tbody tr:hover {
+  background: yellow;
+}
