@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form id="test-form">
+    <input type="text" name="username">
+    <!-- If I give an input a "name" attribute, it will be selectable at event.target."name" -->
+    <input type="text" name="pet">
+
+    <input type="radio">
+    <input type="radio">
+
+    <input type="checkbox">
+    <select name="" id="">
+      <option value="">coolio</option>
+    </select>
+
+    <input type="submit">
+  </form>
+
+  <form id="cookie-store">
+    <fieldset>
+      <legend>New Cookie Store</legend>
+
+      <label for="storeName"> Store Name
+        <input name="storeName" type="text">
+      </label>
+
+      <label for="minCustomers"> Minimum Customers</label>
+        <input type="text" name="minCustomers">
+
+      <label for="maxCustomers"> Maximum Customers</label>
+      <input type="text" name="maxCustomers">
+
+      <label for="avgCustomers">Average Customers</label>
+      <input type="text" name="avgCustomers">
+
+      <input type="submit" value="done">
+      <button type="submit">All Done</button>
+    </fieldset>
+  </form>
+
+  <table id="stores"></table>
+
+  <script src="app.js"></script>
+</body>
+</html>

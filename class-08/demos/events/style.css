@@ -1,0 +1,16 @@
+#color-boxes{
+  width: 900px;
+}
+
+div{
+  background: rebeccapurple;
+  box-sizing: border-box;
+  height: 250px;
+  width: 250px;
+  margin: 20px;
+  float: left;
+}
+
+.red {
+  background: red;
+}
