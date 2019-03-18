@@ -1,0 +1,94 @@
+table {
+    border: black solid 1px;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+  
+h1 {
+  margin-left: 29%;
+  width: 60%;
+  height: auto;
+  /* background-color: rebeccapurple; */
+  font-size: 55px;
+  font-family: monospace;
+}
+
+.fishBox {
+  margin-left: 50px;
+}
+
+.moovingFish {
+  width: 105%;
+  height: 50%;
+  margin-left: -4%;
+}
+.navList {
+  list-style: none;
+  width: 440px;
+  height: 60px;
+  margin-bottom: 50px;
+  margin-left: 30%;
+}
+
+footer {
+  margin-bottom: -1px;
+}
+.navListItem {
+  float: left;
+  margin-left: 30px;
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: black;
+}
+.createNewStore {
+  margin-bottom: 300px;
+  text-decoration: blueviolet;
+}
+
+/* td, th {
+  border: 3px solid rebeccapurple;
+ } */
+
+ .button {
+   background-color: #008CBA;
+   margin-left: 10px;
+  }
+  #cookieTable{
+    margin-left: 10%;
+  }
+  
+
+  td, th {  
+    border: 1px solid transparent; 
+    height: 30px; 
+    transition: all 0.3s; 
+}
+
+th {  
+    background: #DFDFDF;
+    font-weight: bold;
+}
+
+td {  
+    background: #FAFAFA;
+    text-align: center;
+}
+
+     
+  tr:nth-child(even) td { background: #F1F1F1; }   
+
+      
+  tr:nth-child(odd) td { background: #FEFEFE; }  
+
+  tr td:hover { background: #666; color: #FFF; }  
+  
+  .goBack{
+    float: left;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: tomato;
+  }
+
+  

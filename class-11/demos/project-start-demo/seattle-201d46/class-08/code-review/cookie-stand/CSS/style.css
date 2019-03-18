@@ -1,0 +1,79 @@
+img {
+    display: block;
+    height: 300px;
+    width: 800px;
+    border: 2px salmon solid;
+    box-shadow: 10px 10px 10px salmon;
+    border-radius: 15px;
+    margin: auto;
+}
+
+body{
+    background-color: bisque;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: brown;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Questrial', sans-serif;
+    font-display: auto;
+    font-size: 400%;
+    font-weight: 400px;
+    color: rgb(211, 181, 144);
+    text-align: center;
+}
+h2, h3 {
+    font-family: 'Questrial', sans-serif;
+    font-display: auto;
+    color: rgb(211, 181, 144);
+    text-align: center;
+}
+a {
+    color: rgb(211, 181, 144);
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+}
+tr:nth-child(1) {
+    background-color: salmon;
+    opacity: 0.8;
+}
+tr:nth-child(2n) {
+    background-color: rgb(211, 181, 144);
+}
+
+/* ul{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200px;
+    color:brown;
+    text-align: left;
+    border: 2px salmon solid;
+    border-radius: 15px;
+    border-width: 4px;
+    border-spacing: 0px;
+    border-bottom-style: ridge;
+    margin-right: 26px;
+    margin-left: 10px;
+} */
+
+/* ul[id = "capHill"] {
+    margin-left: 140px;
+    margin-right: 70px;
+}
+ul[id = "alki"] {
+    margin-left: 70x;
+    
+} */
+
+li {
+    color: salmon;
+    
+}

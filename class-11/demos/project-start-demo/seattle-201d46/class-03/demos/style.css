@@ -1,0 +1,19 @@
+*{
+  outline: 1px solid black;
+}
+
+/* https://css-tricks.com/centering-css-complete-guide/ this centers */
+
+.shopping-cart {
+  font-weight: bold;
+  font-size: 2em;
+}
+#item {
+  font-style: italic;
+}
+
+ul {
+  width: 50%;
+  height: 200px;
+  overflow: scroll;
+}

@@ -1,0 +1,18 @@
+h1 {
+  color: purple;
+}
+
+img {
+  height: 200px;
+  width: 300px;
+}
+
+ul:nth-child(4) li{
+  display: inline-block;
+  width: 350px;
+  height: 350px;
+  border: 2px purple solid;
+  box-shadow: 10px 10px 8px red;
+  margin-right: 30px;
+  border-radius: 175px;
+}

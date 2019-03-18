@@ -31,6 +31,10 @@ Stretch: start with random goats
 // Counter for num of clicks
 var likeCounter = 0;
 var allGoats = [];
+var leftImage = document.getElementById('left_goat_img');
+var rightImage = document.getElementById('right_goat_img');
+var leftGoatThatIsOnThePage;
+var rightGoatThatIsOnThePage;
 
 // =======================================
 // Constructors
@@ -48,30 +52,84 @@ var GoatImage = function(url, name){
 // Initialize the Page
 // ===================================
 
-var leftGoatImage = document.getElementById('left_goat');
+var leftGoatDiv = document.getElementById('left_goat');
 
-var rightGoatImage = document.getElementById('right_goat');
+var rightGoatDiv = document.getElementById('right_goat');
+
+//    randomly select an image(two images)
+//    - random number generator - to pick the goat
+//    - change the DOM
+//    - Store the index of the last goat we put on the page
 
 function handleClickOnLeftGoat(event){
-  // increment left goat's clicks
   console.log('clicked on left goat');
+  //increment total clicks
+  likeCounter++;
+  // increment left goat's clicks
+  leftGoatThatIsOnThePage.clicks++;
+
+
+  // pick a new 2 goats,
+  var leftGoatIndex = Math.floor(Math.random() * allGoats.length);
+  var rightGoatIndex =Math.floor( Math.random() * allGoats.length );
+
+  leftGoatThatIsOnThePage = allGoats[leftGoatIndex];
+  rightGoatThatIsOnThePage = allGoats[rightGoatIndex];
+
+  // and put them on the page
+  leftImage.src = leftGoatThatIsOnThePage.imageUrl;
+  rightImage.src = rightGoatThatIsOnThePage.imageUrl;
+
+
+  // stop after 10 clicks
+  if(likeCounter > 9){
+    // stop listening for clicks on the left and right goat
+    leftGoatDiv.removeEventListener('click', handleClickOnLeftGoat);
+    rightGoatDiv.removeEventListener('click', handleClickOnRightGoat);
+  }
 }
 
 function handleClickOnRightGoat(event) {
-  // increment left goat's clicks
-  console.log('clicked on right goat');
+  console.log('clicked on left goat');
+  //increment total clicks
+  likeCounter++;
+  // increment right goat's clicks
+  rightGoatThatIsOnThePage.clicks++;
+
+
+  // pick a new 2 goats,
+  var leftGoatIndex = Math.floor(Math.random() * allGoats.length);
+  var rightGoatIndex = Math.floor(Math.random() * allGoats.length);
+
+  leftGoatThatIsOnThePage = allGoats[leftGoatIndex];
+  rightGoatThatIsOnThePage = allGoats[rightGoatIndex];
+
+  // and put them on the page
+  leftImage.src = leftGoatThatIsOnThePage.imageUrl;
+  rightImage.src = rightGoatThatIsOnThePage.imageUrl;
+
+
+  // stop after 10 clicks
+  if (likeCounter > 9) {
+    // stop listening for clicks on the left and right goat
+    leftGoatDiv.removeEventListener('click', handleClickOnLeftGoat);
+    rightGoatDiv.removeEventListener('click', handleClickOnRightGoat);
+  }
 }
 
-leftGoatImage.addEventListener('click', handleClickOnLeftGoat);
+leftGoatDiv.addEventListener('click', handleClickOnLeftGoat);
 
-rightGoatImage.addEventListener('click', handleClickOnRightGoat);
+rightGoatDiv.addEventListener('click', handleClickOnRightGoat);
 
 // Instantiate GoatImage objects
-new GoatImage('cruisin-goat.jpg', 'Cruisin Goat');
-new GoatImage('float-your-goat.jpg', 'Float Goat');
-new GoatImage('goat-out-of-hand.jpg', 'Hand Goat');
-new GoatImage('kissing-goat.jpg', 'Kiss Goat');
-new GoatImage('sassy-goat.jpg', 'Sass Goat');
-new GoatImage('smiling-goat.jpg', 'Smile Goat');
-new GoatImage('sweater-goat.jpg', 'Sweet Goat');
+new GoatImage('./images/cruisin-goat.jpg', 'Cruisin Goat');
+new GoatImage('./images/float-your-goat.jpg', 'Float Goat');
+new GoatImage('./images/goat-out-of-hand.jpg', 'Hand Goat');
+new GoatImage('./images/kissing-goat.jpg', 'Kiss Goat');
+new GoatImage('./images/sassy-goat.jpg', 'Sass Goat');
+new GoatImage('./images/smiling-goat.jpg', 'Smile Goat');
+new GoatImage('./images/sweater-goat.jpg', 'Sweet Goat');
 
+// When I first load the page, I need to know which goat is left and right, sso they can track their clicks in the javascript
+leftGoatThatIsOnThePage = allGoats[6];
+rightGoatThatIsOnThePage = allGoats[0];

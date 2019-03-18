@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Gabefile</h1>
+
+  <p>Good day to you! May I ask who I am speaking with</p>
+  <p>Playlist curated for you; Would you like to download?</p>
+
+  <script>
+    'use strict';
+
+    // only two var naming conventions first week of 201
+    var user_name;
+    var nameOfTheKing;
+    // var $cool;
+    // var Name
+
+    user_name = prompt('Good day to you! May I ask who I am speaking with?');
+
+    console.log('this is the users name : ' + user_name);
+
+    alert(user_name + ' is such a good name');
+    // alert('nicholas' + ' is such a good name')
+    // alert('nicholas is such a good name')
+    //do the alert
+
+    var user_name_response = 'Why hello ' + user_name + ', welcome to my humble music site!';
+
+    // created a section that I didn't want console logged. I wanted a prompt that moved to the next prompt aka ok button
+    alert(user_name_response);
+
+    var user_name_searching_database;
+
+    user_name_searching_database = prompt('Playlist curated for you; Would you like to download?');
+
+    console.log('wants to download : ' +   user_name_searching_database);
+        // eureka It finally worked
+
+    alert('Oh, '+ user_name_searching_database + ' you say? well you gotta pay, ' + user_name);
+
+  </script>
+</body>
+
+</html>
