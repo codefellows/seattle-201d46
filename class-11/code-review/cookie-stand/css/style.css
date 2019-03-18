@@ -1,0 +1,252 @@
+/* syntax for importing a google font found at Stack Overflow: https://stackoverflow.com/questions/14676613/how-to-import-google-web-font-in-css-file */
+
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+
+/* ---------------------------
+Header and nav bar
+------------------------------*/
+
+header {
+    margin: 30px auto 60px auto;
+    width: 960px;
+    height: 200px;
+    /* syntax for gradient foud here: https://www.w3schools.com/css/css3_gradients.asp */
+    background-image: linear-gradient(#f8bc94, #9eebe0);
+    border-radius: 30px 30px 0 0;
+}
+
+header>h1 {
+    font-size: 5em;
+    font-family: 'Luckiest Guy', cursive;
+    color: rgb(255, 242, 242);
+    text-shadow: 0.5vw 0.5vw 0.5vw rgb(51, 2, 2);
+    text-align: center;
+    height: 80px;
+    padding: 75px 0 45px 0;
+    background-image: url(../img/salmon.png);
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    background-color: #9eebe0;
+    margin: auto;
+    width: 960px;
+    height: 35px;
+    border-radius: 0 0 30px 30px;
+}
+
+nav>ul>li {
+    float: left;
+    text-align: center;
+    width: 285px;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+nav a {
+    color: #374236;
+}
+
+
+/* ---------------------------
+  General
+  ------------------------------*/
+
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: #D27E60;
+    text-align: center;
+}
+
+main {
+    padding-bottom: 30px;
+}
+
+h2,
+figcaption {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 20px 0 30px 0;
+}
+
+ul {
+    height: 350px;
+    width: 960px;
+    margin: auto;
+}
+
+ul>figure {
+    display: inline-block;
+    width: 250px;
+    margin: 10px;
+    position: relative;
+    white-space: nowrap;
+}
+
+ul>figure>figcaption {
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #9eebe0;
+}
+
+ul>figure>img {
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+ul>figure:hover {
+    height: 300px;
+    width: 300px;
+    z-index: 5;
+}
+
+ul>figure>img:hover {
+    height: 300px;
+    width: 300px;
+    box-shadow: 0 0 20px 20px #9eebe0;
+    z-index: 5;
+}
+
+a {
+    color: #ffc25e;
+}
+
+main>figure>img {
+    border-radius: 50%;
+}
+
+article {
+    margin-top: 70px;
+    width: 400px;
+    margin: auto;
+}
+
+article>h2 {
+    background-color: #9eebe0CC;
+    padding: 20px 0;
+    border-radius: 100%;
+}
+
+article>ul {
+    list-style-image: url("../img/frosted-cookie.jpg");
+    list-style-position: inside;
+    text-align: left;
+    width: inherit;
+}
+
+article ul>li {
+    margin-bottom: 7px;
+}
+
+
+/* ---------------------------
+Tables
+ ------------------------------*/
+
+table {
+    /* syntax for gradient foud here: https://www.w3schools.com/css/css3_gradients.asp */
+    background-image: linear-gradient(#9eebe0, #f8bc94);
+    width: 960px;
+    margin: 0 auto 40px auto;
+    border-collapse: collapse;
+    white-space: nowrap;
+}
+
+thead {
+    background-color: #9eebe0;
+    border-bottom: 2px solid rgb(92, 35, 35);
+}
+
+td,
+th {
+    text-align: center;
+    padding: 10px 10px;
+}
+
+th {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+td {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+tfoot {
+    border-top: 1px solid rgb(92, 35, 35);
+    background-color: #f8bc94);
+}
+
+tfoot>th {
+    border-right: 1px solid rgb(92, 35, 35);
+}
+
+tfoot>td:last-child {
+    border-left: 1px solid rgb(92, 35, 35);
+}
+
+tr>th {
+    border-right: 1px solid rgb(92, 35, 35);
+}
+
+tr>td:last-child {
+    border-left: 1px solid rgb(92, 35, 35);
+}
+
+
+/* ---------------------------
+Forms
+ ------------------------------*/
+
+form {
+    /* fit content value found on CSS Tricks: https://css-tricks.com/almanac/properties/w/width/ */
+    width: fit-content;
+    margin: 50px auto;
+    white-space: nowrap;
+}
+
+fieldset {
+    border: none;
+    background-color: rgb(252, 203, 157, 0.5);
+    border-radius: 7px;
+    padding: 7px 7px 0 7px;
+}
+
+legend {
+    text-align: right;
+    padding: 3px 7px;
+    /* border: 1px solid black; */
+    background-color: rgb(252, 203, 157);
+    border-radius: 5px;
+}
+
+label {
+    text-align: right;
+    display: block;
+    margin-bottom: 7px;
+}
+
+.number {
+    border-radius: 6px;
+    width: 50px;
+}
+
+input:focus {
+    box-shadow: 0 0 1px 2px rgb(124, 51, 51);
+    background-color: rgb(252, 203, 157);
+}
+
+select {
+    margin-top: 10px;
+}
+
+
+/* ---------------------------
+ ------------------------------*/
